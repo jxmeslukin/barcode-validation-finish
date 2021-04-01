@@ -15,6 +15,10 @@ function barcodeCheck() {
     var input = document.getElementById('input');
     var output = document.getElementById('output');
     var valid = (odds + (3*evens)) % 10
+    if(barcode.length != 13) {
+        alert("Not 13 chars.")
+        return;
+    }
     console.log(valid)
     console.log(evens)
     console.log(odds)
