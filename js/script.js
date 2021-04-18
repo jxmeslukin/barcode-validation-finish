@@ -27,6 +27,10 @@ function barcodeCheck() {
         output.innerHTML = output.innerHTML + barcode + " OK" + "\n"
     }
     else {
+        var calc = (odds + (3*evens)) % 10
+        console.log(calc);
+        var roundUp = Math.ceil(calc / 10) * 10
+        console.log(roundUp);
         input.innerHTML = input.innerHTML + barcode + "\n"
         output.innerHTML = output.innerHTML + barcode + " INVALID" + "\n"
     }
